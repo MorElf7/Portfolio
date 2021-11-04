@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Bang Cao Portfolio</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    </head>
+    <body style="overflow: visible">
+        <br>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card card-body h-100  border-info" id="profile-wrapper">
+                        <img id="profile-pic" src="{% static 'images/profile.png'%}">
+                        <br>
+                        <h6>Hi, I'm Bang Cao</h6>
+                        <p>I love to code and learn new things</p>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="card card-body h-100  border-info">
+                        <h5>About me</h5>
+                        <hr>
+                        <p>
+                            I am a Computer Science student at UMass Amherst currently looking for internships and any other entry-level job opportunities.
+                        </p>
+                        <p>
+                            I am interested in developing web application and machine learning. Currently, I am still a newbie in these fields, and I would love to have the 
+                            opportunities to learn and grow.
+                        </p>
+                        <p>
+                            I wrote my first Hello World program when I was 15 when I was exploring my career options. I was so fascinated by what the computer 
+                            is capable of when I dived deeper into programming. Since then, my only goal was to become a software developer. That is why I am 
+                            pursuing Computer Science as my Major.
+                        </p>
+                        <p>
+                            Here is my <a href="{% static '/images/CV.pdf' %}" download="BangCaoCV">Resume</a>. 
+                        </p>
+                        <p>Contact me at caothanhbang2002@gmail.com or through my socials.</p>
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008672051127" target="_blank" rel="noreferrer noopener">
+                                <img class="social" src="{% static 'images/facebook.png' %}">
+                            </a></li>
+
+                            <li><a href="https://www.linkedin.com/in/bang-cao-5a0318197/" target="_blank" rel="noreferrer noopener">
+                                <img class="social" src="{% static 'images/linkedin.png' %}"></a>
+                            </li>
+                            
+                            <li><a href="https://twitter.com/MorElf7" target="_blank" rel="noreferrer noopener">
+                                <img class="social" src="{% static 'images/twitter.png' %}">
+                            </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card card-body h-100  border-info">
+                        <h5>My experience as a Developer</h5>
+                        <hr>
+                        <p>
+                            I had a six months internship at SiGlaz Vietnam as a Software Developer. 
+                        </p>
+                        <p>   
+                            At SiGlaz, I learned and wrote codes connecting the database to a web application using Java, C#, and PostgreSQL. I also 
+                            learned about the REST model for designing a web application. I also fixed bugs, and write HTML/CSS for that web application.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-body h-100  border-info">
+                        <h5>My personal projects</h5>
+                        <hr>
+                        <p>
+                            In the summer of my freshman year, I used Java Swing GUI, Python to build some simple games (Ping-Pong, Snake, Chess).
+                            <a class="btn btn-info btn-sm" role="button" href="projects/">Show more</a>
+                        </p>
+                        <p>
+                            In Fall 2021, I am doing a machine learning project called Spotify Genres Classification with UMass Machine Learning club. 
+                            The goal of the projects is to employed machine learning models to be able to classified any given song using the data 
+                            obtained from Spotify API.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card card-body h-100  border-info">
+                        <h5>My education</h5>
+                        <hr>
+                        <p>
+                            I am currently a Computer Science sophomore at UMass Amherst.
+                        </p>
+                        <p>
+                            Related Coursework: Data Structures; Programming Methodology; Comp. System Principle; Probability; Calculus I, II, III; Linear Algebra
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-body h-100  border-info">
+                        <h5>What I know</h5>
+                        <hr>
+                        <p>
+                            I can use C, C++, Java, JavaScript, Python, SQL, and HTML/CSS with C++ and Python as my preferred language. I also have basic knowledge
+                            in Django, PostgreSQL, C#.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br><br>
+        </div>
+    </body>
+</html>
