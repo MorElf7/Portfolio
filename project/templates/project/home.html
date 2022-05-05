@@ -12,13 +12,41 @@
         <div class="container">
             <div class="row">
                 <div class="tab">
-                    <button type="button" class="btn btn-secondary btn-lg" onclick="history.go(-1)">Go back to Resume</button>
+                    <a href="/"><button type="button" class="btn btn-secondary btn-lg">Go back to Resume</button></a>
                     <button type="button" class="btn btn-secondary btn-lg" onclick="openProjects(event, 'chess')" id="defaultOpen">Chess</button>
                     <button type="button" class="btn btn-secondary btn-lg" onclick="openProjects(event, 'ping-pong')">Ping Pong</button>
                     <button type="button" class="btn btn-secondary btn-lg" onclick="openProjects(event, 'snake')">Snake</button>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="openProjects(event, 'postit')">PostIt</button>
                 </div>
             </div>
             <br>
+
+            <div class="tabcontent" id="postit">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card card-body h-100 border-info">
+                            <h5>Post It - Twitter Clone</h5>
+                            <hr>
+                            <p>
+                                This web app is my attempt at creating a fully services and functional web app using Node.js Express.
+                            </p>
+                            <p>
+                                The back-end of my app was build using Node.js, supporting authentication, cookies, and many different important
+                                aspect of a web app. I used Mongo to store all the data and Cloudinary to store the images that the user upload.
+                                I also employed Bootstrap, and Font Awesome to build the front-end. Lastly, the web app is deployed using Heroku.
+                            </p>
+                            <p>
+                                Source code. <a class="btn btn-info btn-sm" href="https://github.com/MorElf7/PostIt" target="_blank" rel="noreferrer noopener" role="button">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{% static 'images/ping-pong.png' %}" width=650 height=400>
+                    </div>
+                </div>
+            </div>
 
             <div class="tabcontent" id="ping-pong">
                 <div class="row">
