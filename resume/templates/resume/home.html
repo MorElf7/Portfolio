@@ -2,131 +2,232 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <title>Bang Cao Portfolio</title>
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    </head>
-    <body style="overflow: visible">
-        <br>
-        <div class="container">
-            <div class="row">
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Bang Cao Portfolio</title>
+		<link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body style="overflow: visible">
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card card-body h-100 border-info" id="profile-wrapper">
+						<img id="profile-pic" src="{% static 'images/avatar.png'%}" />
+						<br />
+						<h6>Hi, I'm Bang Cao</h6>
+						<p>I love to code and learn new things</p>
+					</div>
+				</div>
 
-                <div class="col-md-3">
-                    <div class="card card-body h-100  border-info" id="profile-wrapper">
-                        <img id="profile-pic" src="{% static 'images/avatar.png'%}">
-                        <br>
-                        <h6>Hi, I'm Bang Cao</h6>
-                        <p>I love to code and learn new things</p>
-                    </div>
-                </div>
+				<div class="col-md-9">
+					<div class="card card-body h-100 border-info">
+						<h5>About me</h5>
+						<hr />
+						<p>
+							I am a rising senior Computer Science at UMass Amherst currently looking
+							for internships and any other entry-level job opportunities.
+						</p>
+						<p>
+							I am interested in backend/fullstack, security, and machine learning. I
+							do not have much working experience in these fields but I am a fast
+							learner and a hard worker. I would love to have the opportunities to
+							learn and grow.
+						</p>
+						<p>
+							I wrote my first Hello World program when I was 15 when I was exploring
+							my career options. I was so fascinated by what the computer is capable
+							of when I dived deeper into programming. Since then, my only goal was to
+							become a software developer. That is why I am pursuing Computer Science
+							as my Major.
+						</p>
+						<p>
+							Here is my
+							<a href="{% static '/images/Resume.pdf' %}" download="BangCaoCV"
+								>Resume</a
+							>.
+						</p>
+						<p>Contact me at caothanhbang2002@gmail.com or through my socials.</p>
+						<ul class="social-links">
+							<li class="social-links">
+								<a
+									href="https://www.facebook.com/profile.php?id=100008672051127"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									<img class="social" src="{% static 'images/facebook.png' %}" />
+								</a>
+							</li>
 
-                <div class="col-md-9">
-                    <div class="card card-body h-100  border-info">
-                        <h5>About me</h5>
-                        <hr>
-                        <p>
-                            I am a Computer Science student at UMass Amherst currently looking for internships and any other entry-level job opportunities.
-                        </p>
-                        <p>
-                            I am interested in developing web application and machine learning. Currently, I am still a newbie in these fields, and I would love to have the 
-                            opportunities to learn and grow.
-                        </p>
-                        <p>
-                            I wrote my first Hello World program when I was 15 when I was exploring my career options. I was so fascinated by what the computer 
-                            is capable of when I dived deeper into programming. Since then, my only goal was to become a software developer. That is why I am 
-                            pursuing Computer Science as my Major.
-                        </p>
-                        <p>
-                            Here is my <a href="{% static '/images/CV.pdf' %}" download="BangCaoCV">Resume</a>. 
-                        </p>
-                        <p>Contact me at caothanhbang2002@gmail.com or through my socials.</p>
-                        <ul class="social-links">
-                            <li><a href="https://www.facebook.com/profile.php?id=100008672051127" target="_blank" rel="noreferrer noopener">
-                                <img class="social" src="{% static 'images/facebook.png' %}">
-                            </a></li>
+							<li class="social-links">
+								<a
+									href="https://www.linkedin.com/in/bang-cao-5a0318197/"
+									target="_blank"
+									rel="noreferrer noopener"
+								>
+									<img class="social" src="{% static 'images/linkedin.png' %}"
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card card-body h-100 border-info">
+						<h5>My experience as a Developer</h5>
+						<hr />
+						<div>
+							<h6>
+								EyeQ Tech | Software Engineering Intern | May 2022 - August 2022
+							</h6>
+							<ul class="achievements">
+								<li>
+									Study and research Oracle Operat Property Management Service
+									(PMS) to help hotels manages guests, rooms, and services
+								</li>
+								<li>
+									Integrate Oracle Opera PMS to EyeQ's hotel kiosk app using C#,
+									.NET, XML, SOAP, REST
+								</li>
+								<li>
+									The kiosk uses face recognition technology to securely stored
+									and retrieved customer data
+								</li>
+								<li>
+									Implement a mirror screen functionality that allows the
+									receptionist to help guests walk through processes such as
+									checking in, checking out, order services, …
+								</li>
+								<li>
+									Work with writing, and reading RFID cards as an optional
+									function for the kiosk
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h6>SiGlaz | Software Engineering Intern | Dec 2020 - June 2021</h6>
+							<ul class="achievements">
+								<li>
+									Build the backend server for a client company specializing in
+									dermatoglyphics fingerprints using Java Spring, C#, .NET
+								</li>
+								<li>Stored and retrieve data using PostgreSQL</li>
+								<li>Design and build UI/UX for the client Android app</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-                            <li><a href="https://www.linkedin.com/in/bang-cao-5a0318197/" target="_blank" rel="noreferrer noopener">
-                                <img class="social" src="{% static 'images/linkedin.png' %}"></a>
-                            </li>
-                            
-                            <li><a href="https://twitter.com/MorElf7" target="_blank" rel="noreferrer noopener">
-                                <img class="social" src="{% static 'images/twitter.png' %}">
-                            </a></li>
-                        </ul>
+				<div class="col-md-6">
+					<div class="card card-body h-100 border-info">
+						<h5>My personal projects</h5>
+						<hr />
+						<div>
+							<h6>
+								<a href="https://github.com/MorElf7/search-engine">Search Engine</a>
+								| September 2022 - Present
+							</h6>
 
-                    </div>
-                </div>
+							<ul class="achievements">
+								<li>
+									An ongoing project that would produce a fully workable search
+									engine
+								</li>
+								<li>
+									Build search engine components: Porter Stemmer, Google's
+									PageRank algorithm, and Boolean Queries
+								</li>
+								<li>
+									Implement and improved PageRank algorithm runtime, from running
+									in O(n3) to O(n2), tested on 5.6 million links
+								</li>
+								<li>Built an Inverted List to run Boolean Queries</li>
+								<li>
+									Implement and perform BM25 and Query Likelihood evaluation after
+									generating the results
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h6>
+								<a href="https://post-it-fullstack.herokuapp.com"
+									>PostIt Fullstack App</a
+								>
+								| July 2022 - August 2022
+							</h6>
+							<ul class="achivements">
+								<li>
+									A social media web app that allows users to sign up, log in,
+									post images and text, follow/unfollow other users, as well as
+									search for posts or users.
+								</li>
+								<li>
+									Build backend using Node.js and Express, employing RESTful
+									services, and storing data on Mongo Atlas.
+								</li>
+								<li>Build the app's frontend using React, Redux, and Bootstrap</li>
+								<li>Authenticate users using session store</li>
+							</ul>
+						</div>
+						<div>
+							<h6>
+								<a href="https://github.com/MorElf7/Find-the-combo"
+									>Find the Combo</a
+								>
+								| February 2022
+							</h6>
+							<ul class="achievements">
+								<li>A text-adventure style game that was built using C</li>
+								<li>
+									The player would be traveling around the house with a total of 9
+									rooms. The player would need to identify the correct item, room,
+									and character combination to win the game. Every play has only
+									10 tries.
+								</li>
+								<li>Played using the command line</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card card-body h-100 border-info">
+						<h5>My education</h5>
+						<hr />
+						<p>I am currently a Computer Science junior at UMass Amherst.</p>
+						<p>
+							Related Coursework: Algorithms and Data Structures, Theory of
+							Computation, Software Engineering and Design, Linear Algebra, Operating
+							Systems, Artificial Intelligence, Search Engine, Web Programming.
+							Cryptography, Computer Vision
+						</p>
+					</div>
+				</div>
 
-            </div>
-            <br>
-            <div class="row">
-
-                <div class="col-md-6">
-                    <div class="card card-body h-100  border-info">
-                        <h5>My experience as a Developer</h5>
-                        <hr>
-                        <p>
-                            I had a six months internship at SiGlaz Vietnam as a Software Developer. 
-                        </p>
-                        <p>   
-                            At SiGlaz, I learned and wrote codes connecting the database to a web application using Java, C#, and PostgreSQL. I also 
-                            learned about the REST model for designing a web application. I also fixed bugs, and write HTML/CSS for that web application.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card card-body h-100  border-info">
-                        <h5>My personal projects</h5>
-                        <hr>
-                        <p>
-                            I have built a close replica of Twitter using Node.js when trying to learn Node.js.
-                        </p>
-                        <p>
-                            This website is also a personal project of mine. This was build using Python Django, with Bootstrap, and deployed with Heroku. 
-                            This was first intended as a way for me to apply all the things that I learn about web developing, Django in particular. Soon
-                            it grows to be a personal website and interest of mine, where I can display my story and what do I have to offer.
-                        </p>
-                        <p>
-                            In the summer of my freshman year, I used Java Swing GUI, Python to build some simple games (Ping-Pong, Snake, Chess).
-                            <a class="btn btn-info btn-sm" role="button" href="project/">Show more</a>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <br>
-            <div class="row">
-
-                <div class="col-md-6">
-                    <div class="card card-body h-100  border-info">
-                        <h5>My education</h5>
-                        <hr>
-                        <p>
-                            I am currently a Computer Science sophomore at UMass Amherst.
-                        </p>
-                        <p>
-                            Related Coursework: Data Structures; Programming Methodology; Comp. System Principle; Probability; Calculus I, II, III; Linear Algebra;
-                            Introduction to Computation 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card card-body h-100  border-info">
-                        <h5>What I know</h5>
-                        <hr>
-                        <p>
-                            I can use C, C++, Java, JavaScript, Python, SQL, and HTML/CSS with C++ and Python as my preferred language. I also have intermediate knowledge
-                            in Django, PostgreSQL, and basic knowledge of RESTful API.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <br><br><br><br>
-        </div>
-    </body>
+				<div class="col-md-6">
+					<div class="card card-body h-100 border-info">
+						<h5>What I know</h5>
+						<hr />
+						<p>
+							I am competent with C/C++, JavaScript, TypeScript, Python, C# .NET,
+							Node.js, Django, React.js, Redux.js, HTML, CSS, Git, LaTeX, MongoDB,
+							PostgreSQL.
+						</p>
+						<p>Python and TypeScript is my preferred language.</p>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br /><br />
+		</div>
+	</body>
 </html>
